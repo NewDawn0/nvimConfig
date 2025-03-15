@@ -24,6 +24,11 @@ loader.load({
 		events = { "BufReadPre", "BufNewFile" },
 		file = "cfg.gitsigns",
 	},
+	["indent-blankline.nvim"] = {
+		events = { "BufReadPost", "BufNewFile" },
+		deps = { "rainbow-delimiters.nvim" },
+		file = "cfg.ibl",
+	},
 	["lualine.nvim"] = {
 		events = { "UIEnter" },
 		deps = { "nvim-web-devicons" },
