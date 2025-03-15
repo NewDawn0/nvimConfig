@@ -52,6 +52,12 @@ loader.load({
 		deps = { "cmp-buffer", "cmp-nvim-lsp", "cmp-path", "cmp_luasnip", "lspkind.nvim", "luasnip" },
 		file = "cfg.cmp",
 	},
+	["nvim-lspconfig"] = {
+		cmds = { "LspInfo" },
+		events = { "BufReadPre", "BufNewFile" },
+		deps = { "cmp-nvim-lsp", "lspkind.nvim", "nvim-cmp" },
+		file = "cfg.lsp",
+	},
 	-- Dependencies 📦
 	["luasnip"] = {
 		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
