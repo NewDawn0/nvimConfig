@@ -98,6 +98,9 @@ loader.load({
 		events = { "BufWritePre" },
 		file = "cfg.trim",
 	},
+	["vim-markdown-toc"] = {
+		filetypes = { "markdown" },
+	},
 	["vim-tmux-navigator"] = {
 		keys = { "<C-h>", "<C-j>", "<C-k>", "<C-l>" },
 		cmds = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight" },
