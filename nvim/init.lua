@@ -84,6 +84,11 @@ loader.load({
 	["neogen"] = {
 		file = "cfg.doc",
 	},
+	["nvim-treesitter"] = {
+		events = { "BufNewFile", "BufReadPre" },
+		deps = { "nvim-web-devicons" },
+		file = "cfg.ts",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
