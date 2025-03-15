@@ -33,6 +33,10 @@ loader.load({
 		events = { "UIEnter" },
 		file = "cfg.notify",
 	},
+	["vimplugin-colorful-winsep"] = {
+		events = { "WinNew" },
+		file = "cfg.winsep",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
