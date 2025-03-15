@@ -63,6 +63,10 @@ loader.load({
 		deps = { "nvim-web-devicons" },
 		file = "cfg.oil",
 	},
+	["trim.nvim"] = {
+		events = { "BufWritePre" },
+		file = "cfg.trim",
+	},
 	-- Dependencies 📦
 	["luasnip"] = {
 		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
