@@ -64,6 +64,9 @@ loader.load({
 		keys = { "gcc", "gcb" },
 		file = "cfg.comment",
 	},
+	["markdown-preview.nvim"] = {
+		filetypes = { "markdown" },
+	},
 	["mini.surround"] = {
 		events = { "ModeChanged" },
 		file = "cfg.surround",
