@@ -111,6 +111,11 @@ loader.load({
 		cmds = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight" },
 		file = "cfg.tmux",
 	},
+	["vimplugin-build-nvim"] = {
+		keys = { "<leader>bb", "<leader>br" },
+		cmds = { "Build" },
+		file = "cfg.build",
+	},
 	["wrapping.nvim"] = {
 		keys = { "<leader>wt" },
 		filetypes = { "latex", "mail", "rst", "tex", "text" },
