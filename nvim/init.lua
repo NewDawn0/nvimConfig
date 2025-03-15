@@ -67,6 +67,11 @@ loader.load({
 		events = { "BufWritePre" },
 		file = "cfg.trim",
 	},
+	["vim-tmux-navigator"] = {
+		keys = { "<C-h>", "<C-j>", "<C-k>", "<C-l>" },
+		cmds = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight" },
+		file = "cfg.tmux",
+	},
 	-- Dependencies 📦
 	["luasnip"] = {
 		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
