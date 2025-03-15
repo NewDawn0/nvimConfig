@@ -46,9 +46,29 @@ loader.load({
 		events = { "ModeChanged" },
 		file = "cfg.surround",
 	},
+	["nvim-cmp"] = {
+		cmds = { "CmpStatus" },
+		events = { "InsertEnter" },
+		deps = { "cmp-buffer", "cmp-nvim-lsp", "cmp-path", "cmp_luasnip", "lspkind.nvim", "luasnip" },
+		file = "cfg.cmp",
+	},
+	-- Dependencies 📦
+	["luasnip"] = {
+		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
+	},
+	["neogen"] = {
+		file = "cfg.doc",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
 		end,
 	},
+	-- Dependencies (No CFG) 📦
+	["cmp-buffer"] = {},
+	["cmp-nvim-lsp"] = {},
+	["cmp-path"] = {},
+	["cmp_luasnip"] = {},
+	["friendly-snippets"] = {},
+	["lspkind.nvim"] = {},
 })
