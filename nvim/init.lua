@@ -42,6 +42,10 @@ loader.load({
 		keys = { "gcc", "gcb" },
 		file = "cfg.comment",
 	},
+	["mini.surround"] = {
+		events = { "ModeChanged" },
+		file = "cfg.surround",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
