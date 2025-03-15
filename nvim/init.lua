@@ -6,6 +6,11 @@ require("cfg.alpha")
 local loader = require("loader")
 loader.setup()
 loader.load({
+	-- Speed 🚀
+	["indent-o-matic"] = {
+		events = { "InsertEnter" },
+		file = "cfg.iom",
+	},
 	["vim-startuptime"] = {
 		cmds = { "StartupTime" },
 	},
