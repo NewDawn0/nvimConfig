@@ -24,6 +24,11 @@ loader.load({
 		events = { "BufReadPre", "BufNewFile" },
 		file = "cfg.gitsigns",
 	},
+	["lualine.nvim"] = {
+		events = { "UIEnter" },
+		deps = { "nvim-web-devicons" },
+		file = "cfg.lualine",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
