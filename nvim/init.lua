@@ -20,6 +20,10 @@ loader.load({
 		events = { "BufAdd", "BufReadPost" },
 		file = "cfg.bufferline",
 	},
+	["dressing.nvim"] = {
+		events = { "UIEnter" },
+		file = "cfg.dressing",
+	},
 	["gitsigns.nvim"] = {
 		events = { "BufReadPre", "BufNewFile" },
 		file = "cfg.gitsigns",
