@@ -72,6 +72,11 @@ loader.load({
 		cmds = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight" },
 		file = "cfg.tmux",
 	},
+	["wrapping.nvim"] = {
+		keys = { "<leader>wt" },
+		filetypes = { "latex", "mail", "rst", "tex", "text" },
+		file = "cfg.wrap",
+	},
 	-- Dependencies 📦
 	["luasnip"] = {
 		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
