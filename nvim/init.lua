@@ -46,6 +46,11 @@ loader.load({
 		events = { "UIEnter" },
 		file = "cfg.notify",
 	},
+	["todo-comments.nvim"] = {
+		events = { "BufReadPre" },
+		deps = { "plenary.nvim" },
+		file = "cfg.todo",
+	},
 	["vimplugin-colorful-winsep"] = {
 		events = { "WinNew" },
 		file = "cfg.winsep",
@@ -114,4 +119,5 @@ loader.load({
 	["cmp_luasnip"] = {},
 	["friendly-snippets"] = {},
 	["lspkind.nvim"] = {},
+	["plenary.nvim"] = {},
 })
