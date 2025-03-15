@@ -71,6 +71,12 @@ loader.load({
 		events = { "ModeChanged" },
 		file = "cfg.surround",
 	},
+	["nvim-autopairs"] = {
+		events = { "InsertEnter" },
+		config = function()
+			require("nvim-autopairs").setup({})
+		end,
+	},
 	["nvim-cmp"] = {
 		cmds = { "CmpStatus" },
 		events = { "InsertEnter" },
