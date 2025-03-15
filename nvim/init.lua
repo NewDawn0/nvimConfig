@@ -37,6 +37,11 @@ loader.load({
 		events = { "WinNew" },
 		file = "cfg.winsep",
 	},
+	-- Functionality 💬
+	["comment.nvim"] = {
+		keys = { "gcc", "gcb" },
+		file = "cfg.comment",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
