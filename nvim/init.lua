@@ -15,8 +15,18 @@ loader.load({
 		cmds = { "StartupTime" },
 	},
 	-- UI ✨
+	["bufferline.nvim"] = {
+		deps = { "nvim-web-devicons" },
+		events = { "BufAdd", "BufReadPost" },
+		file = "cfg.bufferline",
+	},
 	["gitsigns.nvim"] = {
 		events = { "BufReadPre", "BufNewFile" },
 		file = "cfg.gitsigns",
+	},
+	["nvim-web-devicons"] = {
+		config = function()
+			require("nvim-web-devicons").setup({})
+		end,
 	},
 })
