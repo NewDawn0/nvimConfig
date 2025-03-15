@@ -14,4 +14,9 @@ loader.load({
 	["vim-startuptime"] = {
 		cmds = { "StartupTime" },
 	},
+	-- UI ✨
+	["gitsigns.nvim"] = {
+		events = { "BufReadPre", "BufNewFile" },
+		file = "cfg.gitsigns",
+	},
 })
