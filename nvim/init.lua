@@ -29,6 +29,10 @@ loader.load({
 		deps = { "nvim-web-devicons" },
 		file = "cfg.lualine",
 	},
+	["nvim-notify"] = {
+		events = { "UIEnter" },
+		file = "cfg.notify",
+	},
 	["nvim-web-devicons"] = {
 		config = function()
 			require("nvim-web-devicons").setup({})
