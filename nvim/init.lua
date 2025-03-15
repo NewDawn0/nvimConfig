@@ -133,6 +133,10 @@ loader.load({
 			require("nvim-web-devicons").setup({})
 		end,
 	},
+	["rainbow-delimiters.nvim"] = {
+		deps = { "nvim-treesitter" },
+		file = "cfg.delims",
+	},
 	["telescope-media-files.nvim"] = {
 		deps = { "popup.nvim" },
 	},
