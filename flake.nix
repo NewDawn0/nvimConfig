@@ -1,4 +1,5 @@
 {
+  description = "Fully setup runnable neovim configuration";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
     cmp-locked = { url = "github:NewDawn0/nvimCmpLocked"; };
