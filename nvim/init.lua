@@ -58,6 +58,11 @@ loader.load({
 		deps = { "cmp-nvim-lsp", "lspkind.nvim", "nvim-cmp" },
 		file = "cfg.lsp",
 	},
+	["oil.nvim"] = {
+		events = "VimEnter",
+		deps = { "nvim-web-devicons" },
+		file = "cfg.oil",
+	},
 	-- Dependencies 📦
 	["luasnip"] = {
 		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
