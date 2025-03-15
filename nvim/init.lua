@@ -94,6 +94,11 @@ loader.load({
 		deps = { "nvim-web-devicons" },
 		file = "cfg.oil",
 	},
+	["telescope.nvim"] = {
+		cmds = { "Telescope" },
+		deps = { "plenary.nvim", "telescope-fzf-native.nvim", "telescope-media-files.nvim" },
+		file = "cfg.telescope",
+	},
 	["trim.nvim"] = {
 		events = { "BufWritePre" },
 		file = "cfg.trim",
@@ -128,6 +133,9 @@ loader.load({
 			require("nvim-web-devicons").setup({})
 		end,
 	},
+	["telescope-media-files.nvim"] = {
+		deps = { "popup.nvim" },
+	},
 	-- Dependencies (No CFG) 📦
 	["cmp-buffer"] = {},
 	["cmp-nvim-lsp"] = {},
@@ -136,4 +144,6 @@ loader.load({
 	["friendly-snippets"] = {},
 	["lspkind.nvim"] = {},
 	["plenary.nvim"] = {},
+	["popup.nvim"] = {},
+	["telescope-fzf-native.nvim"] = {},
 })

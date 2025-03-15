@@ -42,6 +42,7 @@ with pkgs.vimPlugins; [
   nvim-treesitter.withAllGrammars
   nvim-web-devicons
   plenary-nvim
+  popup-nvim
   rainbow-delimiters-nvim
   telescope-fzf-native-nvim
   telescope-media-files-nvim
