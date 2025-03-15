@@ -56,6 +56,10 @@ loader.load({
 		file = "cfg.winsep",
 	},
 	-- Functionality 💬
+	["boole.nvim"] = {
+		keys = { "<C-i>", "<C-d>" },
+		file = "cfg.boole",
+	},
 	["comment.nvim"] = {
 		keys = { "gcc", "gcb" },
 		file = "cfg.comment",
