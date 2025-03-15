@@ -34,6 +34,10 @@ loader.load({
 		deps = { "nvim-web-devicons" },
 		file = "cfg.lualine",
 	},
+	["nvim-colorizer.lua"] = {
+		events = { "BufReadPre" },
+		file = "cfg.colorizer",
+	},
 	["nvim-notify"] = {
 		events = { "UIEnter" },
 		file = "cfg.notify",
