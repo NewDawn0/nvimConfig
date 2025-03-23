@@ -51,7 +51,7 @@ let
     };
   finalNvim = opts:
     pkgs.symlinkJoin {
-      name = "final-nvim";
+      name = "nvim";
       paths = map (e: wrapNvim opts e) ([ "nvim" ] ++ opts.aliases);
       meta = {
         description = "Fully setup runnable neovim configuration";
