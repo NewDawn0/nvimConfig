@@ -17,7 +17,7 @@ for _, ext in ipairs(extensions) do
 	telescope.load_extension(ext)
 end
 
-setKb({
+require("lib.keys").setKb({
 	{
 		"<leader>fb",
 		action = ":Telescope buffers<cr>",
