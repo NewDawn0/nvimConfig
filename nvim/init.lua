@@ -101,7 +101,7 @@ loader.load({
 		file = "cfg.lsp",
 	},
 	["oil.nvim"] = {
-		events = "VimEnter",
+		events = { "VimEnter" },
 		deps = { "nvim-web-devicons" },
 		file = "cfg.oil",
 	},
