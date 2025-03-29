@@ -102,6 +102,7 @@ loader.load({
 	},
 	["oil.nvim"] = {
 		events = { "VimEnter" },
+		keys = { "<leader>fw" },
 		deps = { "nvim-web-devicons" },
 		file = "cfg.oil",
 	},
