@@ -1,13 +1,5 @@
 { pkgs }:
 with pkgs; [
-  # Lua
-  lua-language-server
-  luaPackages.luacheck
-  stylua
-  # General lsp
-  clang-tools
-  lua-language-server
-  typos-lsp
   # Formatters
   asmfmt # Assembly
   clang-tools # C, C++
@@ -31,9 +23,23 @@ with pkgs; [
   zig # Zig
   # General
   chafa
+  coreutils
+  curl
   epub-thumbnailer
+  fd
   ffmpegthumbnailer
+  fzf
   imagemagick
   poppler_utils
   ripgrep
+  wget
+  # General: Language tooling
+  typescript # JS, TS
+  nodejs # JS, TS
+  prettierd # JS, TS
+  openjdk # Java
+  gcc # C
+  gnumake # C, C++
+  libcxxStdenv # C++
+  nasm # Assembly
 ]
