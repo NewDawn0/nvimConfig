@@ -21,6 +21,15 @@ with pkgs; [
   taplo # Toml
   yamlfmt # Yaml
   zig # Zig
+  # Debuggers
+  lldb
+  delve
+  (python3.withPackages (p: with p; [ debugpy pytest flake8 ]))
+  # Linters
+  write-good # All
+  typos # All
+  codespell # All
+  nodePackages.cspell # All
   # General
   chafa
   coreutils
