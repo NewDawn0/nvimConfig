@@ -36,6 +36,7 @@ loader.load({
 		file = "cfg.dressing",
 	},
 	["gitsigns.nvim"] = {
+		keys = { "<leader>gs", "<leader>gu", "<leader>gr", "<leader>gd", "<leader>gnn", "<leader>gnp" },
 		events = { "BufReadPre", "BufNewFile" },
 		file = "cfg.gitsigns",
 	},
