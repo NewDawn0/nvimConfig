@@ -19,6 +19,7 @@ with pkgs.vimPlugins; [
   boole-nvim
   build-nvim
   comment-nvim
+  conform-nvim
   markdown-preview-nvim
   mini-surround
   nvim-autopairs
