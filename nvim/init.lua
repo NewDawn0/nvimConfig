@@ -76,6 +76,11 @@ loader.load({
 		keys = { "gcc", "gcb" },
 		file = "cfg.comment",
 	},
+	["conform.nvim"] = {
+		events = { "BufReadPost" }, -- Just needs to be loaded before BufWritePre
+		keys = { "<leader>bf", "<leader>ftl", "<leader>ftg" },
+		file = "cfg.conform",
+	},
 	["markdown-preview.nvim"] = {
 		filetypes = { "markdown" },
 	},
