@@ -1,5 +1,37 @@
 { pkgs }:
 with pkgs; [
+  # Lsps
+  clang-tools # C, C++
+  ccls # C, C++
+  lua-language-server # Lua
+  typos-lsp # All
+  asm-lsp # Assembly
+  nodePackages.bash-language-server # Bash, Shell, Zsh
+  nodePackages.diagnostic-languageserver # Diagnostics
+  vscode-langservers-extracted # CSS, Html, JS, Sass, JSON
+  dockerfile-language-server-nodejs # Dockerfile
+  fortran-language-server # Fortran
+  gleam # Gleam
+  gopls # Go
+  ormolu # Haskell
+  java-language-server # Java
+  jdt-language-server # Java
+  nodePackages.typescript-language-server # JS, TS
+  marksman # Markdown
+  write-good # Markdown, Text
+  nixd # Nix
+  nil # Nix
+  ocamlPackages.ocaml-lsp # Ocaml
+  perlnavigator # Perl
+  buf # Protobuf
+  powershell-editor-services # Powershell
+  protols # Protobuf
+  black # Python
+  basedpyright # Python
+  rust-analyzer # Rust
+  taplo # Toml
+  typst-lsp # Typst
+  yaml-language-server # Yaml
   # Formatters
   asmfmt # Assembly
   clang-tools # C, C++
