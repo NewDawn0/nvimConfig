@@ -33,6 +33,7 @@ M.lsps = {
 	["typos_lsp"] = {},
 	["yamlls"] = {},
 	["zls"] = {},
+	["tinymist"] = {},
 }
 
 M.merge = function(configured)

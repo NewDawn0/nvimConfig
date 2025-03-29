@@ -30,7 +30,7 @@ with pkgs; [
   basedpyright # Python
   rust-analyzer # Rust
   taplo # Toml
-  typst-lsp # Typst
+  tinymist # Typst
   yaml-language-server # Yaml
   # Formatters
   asmfmt # Assembly
