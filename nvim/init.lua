@@ -108,6 +108,16 @@ loader.load({
 	},
 	["telescope.nvim"] = {
 		cmds = { "Telescope" },
+		keys = {
+			"<leader>ff",
+			"<leader>fb",
+			"<leader>fd",
+			"<leader>fgc",
+			"<leader>fll",
+			"<leader>fn",
+			"<leader>fs",
+			"<leader>fm",
+		},
 		deps = { "plenary.nvim", "telescope-fzf-native.nvim", "telescope-media-files.nvim" },
 		file = "cfg.telescope",
 	},
