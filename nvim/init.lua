@@ -100,6 +100,11 @@ loader.load({
 		deps = { "cmp-buffer", "cmp-nvim-lsp", "cmp-path", "cmp_luasnip", "lspkind.nvim", "luasnip" },
 		file = "cfg.cmp",
 	},
+	["nvim-dap"] = {
+		deps = { "nvim-dap-ui", "nvim-dap-go", "nvim-dap-python" },
+		keys = { "<leader>dt" },
+		file = "cfg.dap",
+	},
 	["nvim-lspconfig"] = {
 		cmds = { "LspInfo" },
 		events = { "BufReadPre", "BufNewFile" },
@@ -156,6 +161,9 @@ loader.load({
 	["neogen"] = {
 		file = "cfg.doc",
 	},
+	["nvim-dap-ui"] = {
+		deps = { "nvim-nio" },
+	},
 	["nvim-treesitter"] = {
 		events = { "BufNewFile", "BufReadPre" },
 		deps = { "nvim-web-devicons" },
@@ -180,6 +188,9 @@ loader.load({
 	["cmp_luasnip"] = {},
 	["friendly-snippets"] = {},
 	["lspkind.nvim"] = {},
+	["nvim-dap-go"] = {},
+	["nvim-dap-python"] = {},
+	["nvim-nio"] = {},
 	["nvim-treesitter-textobjects"] = {},
 	["plenary.nvim"] = {},
 	["popup.nvim"] = {},

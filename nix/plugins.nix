@@ -24,6 +24,8 @@ with pkgs.vimPlugins; [
   mini-surround
   nvim-autopairs
   nvim-cmp
+  nvim-dap
+  nvim-dap-ui
   nvim-lspconfig
   oil-nvim
   telescope-nvim
@@ -40,6 +42,8 @@ with pkgs.vimPlugins; [
   lspkind-nvim
   luasnip
   neogen
+  nvim-nio
+  nvim-treesitter-textobjects
   nvim-treesitter.withAllGrammars
   nvim-web-devicons
   plenary-nvim
@@ -47,4 +51,6 @@ with pkgs.vimPlugins; [
   rainbow-delimiters-nvim
   telescope-fzf-native-nvim
   telescope-media-files-nvim
+  nvim-dap-python
+  nvim-dap-go
 ]
