@@ -21,7 +21,6 @@ with pkgs; [
   write-good # Markdown, Text
   nixd # Nix
   nil # Nix
-  ocamlPackages.ocaml-lsp # Ocaml
   perlnavigator # Perl
   buf # Protobuf
   powershell-editor-services # Powershell
