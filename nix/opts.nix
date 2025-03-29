@@ -1,4 +1,1 @@
-{
-  aliases = [ "vi" "vim" ];
-  langs = { all.enable = false; };
-}
+{ aliases = [ "vi" "vim" ]; }
