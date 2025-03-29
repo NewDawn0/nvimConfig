@@ -174,6 +174,7 @@ loader.load({
 	["cmp_luasnip"] = {},
 	["friendly-snippets"] = {},
 	["lspkind.nvim"] = {},
+	["nvim-treesitter-textobjects"] = {},
 	["plenary.nvim"] = {},
 	["popup.nvim"] = {},
 	["telescope-fzf-native.nvim"] = {},
