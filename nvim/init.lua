@@ -159,6 +159,7 @@ loader.load({
 		deps = { "friendly-snippets", "cmp_luasnip", "neogen" },
 	},
 	["neogen"] = {
+		keys = { "<leader>cd" },
 		file = "cfg.doc",
 	},
 	["nvim-dap-ui"] = {
