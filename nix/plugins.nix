@@ -11,6 +11,7 @@ with pkgs.vimPlugins; [
   dressing-nvim
   gitsigns-nvim
   indent-blankline-nvim
+  lspsaga-nvim
   lualine-nvim
   nvim-colorizer-lua
   nvim-notify

@@ -45,6 +45,13 @@ loader.load({
 		deps = { "rainbow-delimiters.nvim" },
 		file = "cfg.ibl",
 	},
+	["lspsaga.nvim"] = {
+		events = { "BufReadPre", "BufNewFile" },
+		deps = { "telescope.nvim", "nvim-web-devicons", "nvim-lspconfig" },
+		config = function()
+			require("lspsaga").setup({})
+		end,
+	},
 	["lualine.nvim"] = {
 		events = { "UIEnter" },
 		deps = { "nvim-web-devicons" },
