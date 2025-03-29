@@ -17,6 +17,17 @@ loader.load({
 	-- UI ✨
 	["bufferline.nvim"] = {
 		deps = { "nvim-web-devicons" },
+		keys = {
+			"<leader>bn",
+			"<leader>bp",
+			"<leader>bdd",
+			"<leader>bdo",
+			"<leader>bdn",
+			"<leader>bdp",
+			"<leader>bmn",
+			"<leader>bmp",
+			"<leader>bt",
+		},
 		events = { "BufAdd", "BufReadPost" },
 		file = "cfg.bufferline",
 	},
