@@ -7,17 +7,14 @@
         ]
       },
       "locked": {
-        "lastModified": 1743257585,
-        "narHash": "sha256-vkgQ+hEU5zOR4LK+BxV2MlWxviBMyUF9i+F0SlACH44=",
-        "owner": "NewDawn0",
-        "repo": "b16.nvim",
-        "rev": "8933f2c79c790be374de9d439e4df1918fbba8b2",
-        "type": "github"
+        "lastModified": 1743264965,
+        "narHash": "sha256-elHnhf5DO+TAyPyKyJ0WLjk+q4FnYN1VjviRpHTY/vA=",
+        "path": "/Users/dawn/GitHub/b16.nvim",
+        "type": "path"
       },
       "original": {
-        "owner": "NewDawn0",
-        "repo": "b16.nvim",
-        "type": "github"
+        "path": "/Users/dawn/GitHub/b16.nvim",
+        "type": "path"
       }
     },
     "build-nvim": {

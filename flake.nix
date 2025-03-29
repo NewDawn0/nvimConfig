@@ -4,7 +4,8 @@
     cmp-locked.url = "github:NewDawn0/nvimCmpLocked";
     utils.url = "github:NewDawn0/nixUtils";
     b16-nvim = {
-      url = "github:NewDawn0/b16.nvim";
+      # url = "github:NewDawn0/b16.nvim";
+      url = "path:/Users/dawn/GitHub/b16.nvim";
       inputs.utils.follows = "utils";
     };
     build-nvim = {
