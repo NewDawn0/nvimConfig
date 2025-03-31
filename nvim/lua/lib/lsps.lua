@@ -30,7 +30,7 @@ M.lsps = {
 	["protols"] = {},
 	["rust_analyzer"] = {},
 	["taplo"] = {},
-	["typos_lsp"] = {},
+	["typos_lsp"] = { filetypes = { "*" } },
 	["yamlls"] = {},
 	["zls"] = {},
 	["tinymist"] = {},
