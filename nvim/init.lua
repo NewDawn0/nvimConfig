@@ -84,7 +84,7 @@ loader.load({
 		file = "cfg.comment",
 	},
 	["conform.nvim"] = {
-		events = { "BufReadPost" }, -- Just needs to be loaded before BufWritePre
+		events = { "BufAdd", "BufReadPost" }, -- Just needs to be loaded before BufWritePre
 		keys = { "<leader>bf", "<leader>ftl", "<leader>ftg" },
 		file = "cfg.conform",
 	},
