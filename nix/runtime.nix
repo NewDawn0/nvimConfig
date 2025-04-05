@@ -31,6 +31,7 @@ with pkgs; [
   taplo # Toml
   tinymist # Typst
   yaml-language-server # Yaml
+  zls # Zig
   # Formatters
   asmfmt # Assembly
   clang-tools # C, C++
