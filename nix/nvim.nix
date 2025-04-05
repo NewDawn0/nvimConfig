@@ -41,18 +41,24 @@ let
         '';
       };
     };
-  wrapNvim = opts: name:
+  wrapNvim = opts:
     pkgs.writeShellApplication {
-      inherit name;
+      name = "nvim";
       runtimeInputs = import ./runtime.nix { inherit pkgs; };
       text = ''
         ${baseNvim opts}/bin/nvim "$@"
       '';
     };
   finalNvim = opts:
-    pkgs.symlinkJoin {
+    pkgs.stdenvNoCC.mkDerivation {
       name = "nvim";
-      paths = map (e: wrapNvim opts e) ([ "nvim" ] ++ opts.aliases);
+      src = null;
+      dontUnpack = true;
+      dontBuild = true;
+      installPhase = ''
+        install -D ${wrapNvim opts}/bin/nvim $out/bin/nvim
+      '' + builtins.concatStringsSep "\n"
+        (map (e: "ln -s $out/bin/nvim $out/bin/${e}") opts.aliases);
       meta = {
         description = "Fully setup runnable neovim configuration";
         homepage = "https://github.com/NewDawn0/nvimConfig";
