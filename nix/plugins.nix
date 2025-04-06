@@ -16,6 +16,7 @@ with pkgs.vimPlugins; [
   nvim-colorizer-lua
   nvim-notify
   todo-comments-nvim
+  tokyonight-nvim
   # Functionality 💬
   boole-nvim
   build-nvim

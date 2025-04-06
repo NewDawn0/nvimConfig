@@ -1,6 +1,7 @@
 -- @NOTE: Must be loaded in this exact order
 require("util")
 require("cfg.b16")
+require("cfg.tokyonight")
 require("cfg.alpha")
 
 local loader = require("loader")
