@@ -1,1 +1,4 @@
-vim.cmd([[colorscheme tokyonight]])
+vim.cmd([[
+packadd tokyonight.nvim
+colorscheme tokyonight
+]])
