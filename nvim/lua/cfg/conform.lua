@@ -55,9 +55,14 @@ vim.api.nvim_create_user_command("FormatToggle", function(opts)
 		vim.notify("Format (Local) set to: " .. tostring(vim.b[bufnr].format_enabled))
 	elseif scope == "global" then
 		vim.g.format_enabled = not vim.g.format_enabled
-		vim.nofitfy("Format (Global) set to: " .. tostring(vim.g.format_enabled))
+		vim.notify("Format (Global) set to: " .. tostring(vim.g.format_enabled))
 	else
-		print("❌ Invalid argument! Use 'local' or 'global'.")
+		vim.b[bufnr].format_enabled = not vim.b[bufnr].format_enabled
+		vim.notify(
+			"> Assuming 'local'\n> Format (Local) set to: " .. tostring(vim.b[bufnr].format_enabled),
+			vim.log.levels.WARN,
+			{ title = "⚠️ No visibility specified" }
+		)
 	end
 end, {
 	nargs = 1,
