@@ -77,6 +77,15 @@ autocmd("FileType", {
 	end,
 })
 
+-- Set filetype for asm includes & macros
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+	pattern = "*.inc",
+	group = "userconf",
+	callback = function()
+		vim.bo.filetype = "asm"
+	end,
+})
+
 -- Display last write time
 vim.api.nvim_create_autocmd("BufWritePost", {
 	callback = function()
