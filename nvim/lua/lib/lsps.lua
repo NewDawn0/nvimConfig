@@ -1,5 +1,9 @@
 local M = {}
 
+--- @class LspWithConfig
+--- @field [string]
+
+---@type LspWithConfig
 M.lsps = {
 	["asm_lsp"] = {},
 	["basedpyright"] = {},
@@ -36,6 +40,9 @@ M.lsps = {
 	["tinymist"] = {},
 }
 
+---Merge lsp configs with defaults
+---@param configured LspWithConfig
+---@return LspWithConfig
 M.merge = function(configured)
 	for name, config in pairs(configured) do
 		if M.lsps[name] then

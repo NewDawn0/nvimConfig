@@ -31,7 +31,7 @@ with pkgs; [
   taplo # Toml
   tinymist # Typst
   yaml-language-server # Yaml
-  zls # Zig
+  # zls # Zig
   # Formatters
   asmfmt # Assembly
   clang-tools # C, C++
@@ -52,7 +52,7 @@ with pkgs; [
   shellharden # Shell, Bash, Zsh
   taplo # Toml
   yamlfmt # Yaml
-  zig # Zig
+  # zig # Zig
   # Debuggers
   lldb
   delve

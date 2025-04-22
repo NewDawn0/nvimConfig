@@ -1,5 +1,6 @@
 local setKb = require("lib.keys").setKb
 
+---Finds a string in a buffer
 local function findInBuf()
 	vim.api.nvim_feedkeys("/", "n", false)
 end
