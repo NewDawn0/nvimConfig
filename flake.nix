@@ -1,7 +1,7 @@
 {
   description = "Fully setup runnable neovim configuration";
   inputs = {
-    cmp-locked.url = "github:NewDawn0/nvimCmpLocked";
+    cmp-locked-nvim.url = "github:NewDawn0/nvimCmpLocked";
     utils.url = "github:NewDawn0/nixUtils";
     b16-nvim = {
       # url = "github:NewDawn0/b16.nvim";
@@ -24,7 +24,7 @@
         b16-nvim.overlays.default
         build-nvim.overlays.default
         loader-nvim.overlays.default
-        cmp-locked.overlays.default
+        cmp-locked-nvim.overlays.default
         (final: prev: (import ./nix/overlays.nix { inherit prev; }))
       ];
     in {
