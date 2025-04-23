@@ -7,8 +7,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1745336407,
-        "narHash": "sha256-S6w/78f8RTEfN6KyZJdXEJ7NspOr77Y8NL4VQ6g+lPs=",
+        "lastModified": 1745390144,
+        "narHash": "sha256-bLsRQchtfBOFqMmK5XEt0rfFocBIJRzYcLgf1Zx12hs=",
         "path": "/Users/dawn/GitHub/b16.nvim",
         "type": "path"
       },
@@ -24,11 +24,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1745336409,
-        "narHash": "sha256-nZO5eYtMYv2IxP2Wz0qbyMN4tIfqGO3nFmPYQvNnbmY=",
+        "lastModified": 1745390039,
+        "narHash": "sha256-6UhS9cgbSuAqEI82OPCi7RYZjAfe2D+kI4BqbFpvEk0=",
         "owner": "NewDawn0",
         "repo": "build.nvim",
-        "rev": "4d44bdc4e76233f5c2faef5914dcb9751317375a",
+        "rev": "a699f873863dd51151d29b764ce929d6649ecc24",
         "type": "github"
       },
       "original": {
@@ -37,7 +37,7 @@
         "type": "github"
       }
     },
-    "cmp-locked": {
+    "cmp-locked-nvim": {
       "inputs": {
         "utils": "utils"
       },
@@ -62,11 +62,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1745336417,
-        "narHash": "sha256-F4PddQHricbGSipjBLwIhTdSp7gXk5rUWk+SNy2qXac=",
+        "lastModified": 1745390047,
+        "narHash": "sha256-rduifSWAGKat7u2xi5+QS9R5fBEI1SEXk0XWkaMufJo=",
         "owner": "NewDawn0",
         "repo": "loader.nvim",
-        "rev": "cc7769f7d22685fa14595696b750a622c3f2424e",
+        "rev": "3c16220961cbe4f394ed17d10685c6565c502bdd",
         "type": "github"
       },
       "original": {
@@ -122,11 +122,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1745335479,
-        "narHash": "sha256-ee5jfz66PjTvVvxL5H+9i50GbS74pttYjWjYU8YcU3k=",
+        "lastModified": 1745388855,
+        "narHash": "sha256-sdyvuJSENo9SCUZ4ltqEQkOKb2L/139wW4h8y1b1pns=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "cc973b6078dbb20d7d88b1eb47ddaa7fe0c61341",
+        "rev": "d9162776cefcebf70b0cc0e56cf12a4d7e44ef0c",
         "type": "github"
       },
       "original": {
@@ -139,7 +139,7 @@
       "inputs": {
         "b16-nvim": "b16-nvim",
         "build-nvim": "build-nvim",
-        "cmp-locked": "cmp-locked",
+        "cmp-locked-nvim": "cmp-locked-nvim",
         "loader-nvim": "loader-nvim",
         "utils": "utils_2"
       }
@@ -169,11 +169,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1745336399,
-        "narHash": "sha256-0Lgclwe2vzBtRFRr1iTyTrbKZ1PMZdUF9r92ZAs8YUo=",
+        "lastModified": 1745390014,
+        "narHash": "sha256-fRr/v396NBj140H80PdZGdObGP7SLcDw5OKY1BgLSW0=",
         "owner": "NewDawn0",
         "repo": "nixUtils",
-        "rev": "2efa170f604b12a639339f47ed58aafe133b4d1f",
+        "rev": "a8d08dbc5f64aaecd937e7f434330618f663c779",
         "type": "github"
       },
       "original": {
