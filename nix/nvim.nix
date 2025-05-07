@@ -27,7 +27,10 @@ let
           nvim-cmp
           plenary-nvim
         ];
-        packages.all.opt = (import ./plugins.nix { inherit pkgs; });
+        packages.all.opt = (import ./plugins.nix {
+          cfg = opts;
+          inherit pkgs;
+        });
         customRC = ''
           lua <<EOF
           -- Startup optimisations

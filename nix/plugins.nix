@@ -1,5 +1,6 @@
-{ pkgs }:
-with pkgs.vimPlugins; [
+{ pkgs, cfg }:
+with pkgs.vimPlugins;
+[
   # Speed 🚀
   indent-o-matic
   vim-startuptime
@@ -55,4 +56,5 @@ with pkgs.vimPlugins; [
   telescope-media-files-nvim
   nvim-dap-python
   nvim-dap-go
-]
+  # Optional: AI
+] ++ pkgs.lib.optionals cfg.features.ai.enable [ supermaven-nvim ]

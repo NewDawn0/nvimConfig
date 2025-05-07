@@ -104,7 +104,15 @@ loader.load({
 	["nvim-cmp"] = {
 		cmds = { "CmpStatus" },
 		events = { "InsertEnter" },
-		deps = { "cmp-buffer", "cmp-nvim-lsp", "cmp-path", "cmp_luasnip", "lspkind.nvim", "luasnip" },
+		deps = {
+			"cmp-buffer",
+			"cmp-nvim-lsp",
+			"cmp-path",
+			"cmp_luasnip",
+			"lspkind.nvim",
+			"luasnip",
+			"supermaven-nvim",
+		},
 		file = "cfg.cmp",
 	},
 	["nvim-dap"] = {
@@ -203,4 +211,9 @@ loader.load({
 	["plenary.nvim"] = {},
 	["popup.nvim"] = {},
 	["telescope-fzf-native.nvim"] = {},
+	-- Optional: AI
+	["supermaven-nvim"] = {
+		cond = vim.g.ndnvim.features.ai.enable,
+		file = "cfg.supermaven",
+	},
 })

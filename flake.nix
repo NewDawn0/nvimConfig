@@ -2,10 +2,13 @@
   description = "Fully setup runnable neovim configuration";
   inputs = {
     cmp-locked-nvim.url = "github:NewDawn0/nvimCmpLocked";
-    utils.url = "github:NewDawn0/nixUtils";
+    nixpkgs.url = "github:NixOS/nixpkgs";
+    utils = {
+      url = "github:NewDawn0/nixUtils";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     b16-nvim = {
-      # url = "github:NewDawn0/b16.nvim";
-      url = "path:/Users/dawn/GitHub/b16.nvim";
+      url = "github:NewDawn0/b16.nvim";
       inputs.utils.follows = "utils";
     };
     build-nvim = {
