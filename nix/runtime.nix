@@ -64,7 +64,6 @@ with pkgs; [
   nodePackages.cspell # All
   # General
   chafa
-  coreutils
   curl
   epub-thumbnailer
   fd
@@ -73,6 +72,7 @@ with pkgs; [
   imagemagick
   poppler_utils
   ripgrep
+  uutils-coreutils
   wget
   # General: Language tooling
   typescript # JS, TS
