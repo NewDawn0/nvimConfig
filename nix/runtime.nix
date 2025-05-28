@@ -72,7 +72,7 @@ with pkgs; [
   imagemagick
   poppler_utils
   ripgrep
-  uutils-coreutils
+  uutils-coreutils-noprefix
   wget
   # General: Language tooling
   typescript # JS, TS
